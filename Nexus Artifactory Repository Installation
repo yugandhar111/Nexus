@@ -10,11 +10,11 @@ Nexus Artifactory Repository Installation
 	 1.8 
 
 # Hardware Requirements:
-	- Nexus Server requires at least 2GB RAM. [Better to have 4GB RAM]
+- Nexus Server requires at least 2GB RAM. [Better to have 4GB RAM]
 
 $ free -h
   ## Login as as root user
-	- $ su - root  / $ sudo -i
+- $ su - root  / $ sudo -i
     
 To downlode the nexus:
 $ cd /opt
@@ -23,7 +23,8 @@ $ cd nexus
 $ sudo wget https://download.sonatype.com/nexus/3/latest-unix.tar.gz
 
 # Extract the Nexus software
-opt$ tar -xvzf  nexus-3.15.2.01-unix.tar.gz
+$ cd /opt
+$ sudo tar -xvzf  nexus-3.15.2.01-unix.tar.gz
 
 $ mv nexus-3.15.2-01  nexus   (Renamed it)
 ## As a good security practice, Nexus is not advised to run as nexus Service as a root,  new user called nexus and grant sudo access to manage nexus services as follows: 
